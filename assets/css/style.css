@@ -46,6 +46,7 @@ body, html {
     color: #fae8ec;
     margin-left: 10px;
     margin-right: 10px;
+    transition: .5s;
 }
 
 .agendar-texto{
@@ -58,9 +59,7 @@ body, html {
 
 .botao-agenda-consulta {
     color: #fae8ec;
-    font-family: Adam-Medium, sans-serif;
-
-    
+    font-family: Adam-Bold, sans-serif;
     padding: 3% 0;
 }
 
@@ -72,7 +71,7 @@ body, html {
 .botao-agenda-consulta:hover .calendario-icone{
     background-color: #fae8ec36;
     color: #c89496;
-    transition: 1s;
+    transition: .5s;
 } 
 
 .item-menu{
@@ -90,7 +89,9 @@ body, html {
 }
 
 .secao1 img{
-    width: 75%;
+    max-width: 600px;
+    width: 100%;
+    min-width: 300px;
 }
 
 /*Sobre mim*/
@@ -103,7 +104,7 @@ body, html {
 }
 
 .sobre-mim p{
-    font-family: 'Spartan', sans-serif;;
+    font-family: 'Spartan', sans-serif;
 }
 
 .sobre-mim img{
@@ -145,3 +146,67 @@ body, html {
 .pilares-formacao{
     background-image: linear-gradient(to bottom, #c89496, #fff);
 }
+.pilares-formacao h1{
+    color: #fae8ec;
+    font-family: "Dancing script", sans-serif;
+    font-size: 50px;
+}
+
+.pilares-formacao li{
+    font-family: 'Spartan', sans-serif;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.botao-olha-lattes {
+    color: #c89496;
+    font-family: Adam-Bold, sans-serif;
+    padding: 3% 0;
+    border: 2px solid #c89496;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.curriculo-icone{
+    color: #c89496;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.botao-olha-lattes:hover {
+    background-color: #c89496;
+    color: #fae8ec !important;
+}
+
+.botao-olha-lattes:hover .curriculo-icone{
+    background-color: #c89496;
+    color: #fae8ec;
+    transition: .5s;
+} 
+
+@media (max-width: 575px){
+    .botao-olha-lattes-div{
+        margin-left: 15px;
+    }
+}
+
+/* Sobre o geriatra */
+.sobre-o-geriatra h1{
+    font-family: Adam-bold, sans-serif;
+}
+.sobre-o-geriatra li,
+.sobre-o-geriatra p{
+    font-family: 'Spartan', sans-serif;
+    text-align: justify;
+}
+.sobre-o-geriatra img{
+    width: 100%;
+    margin-top: -80px;
+}
+.sobre-o-geriatra a{
+    width: 200px;
+}
+
+

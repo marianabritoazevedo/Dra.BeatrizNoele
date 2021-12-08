@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Spartan:wght@300;400&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
     <body>
-        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-rosa-medio">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-rosa-medio">
             <div class="container">
-                <a >
+                <a>
                     <div class="d-flex flex-row align-items-center botao-agenda-consulta">
                         <i class="fa fa-calendar calendario-icone"></i>
                         <p class="agendar-texto">Agendar consulta</p>
@@ -69,22 +69,66 @@
                 </div>
             </div>
         </div>
-        <div class="pilares-formacao mt-5">
+        <div class="pilares-formacao">
             <div class="container">
-                <div class="">
-                    <div class="row">
+                <div class="row">
+                    <div class="col-12 my-5">
                         <h1 class="text-center">Pilares de formação</h1>
                     </div>
-                    <div class="row">
-                        <p>Especialista em Geriatria pela Faculdade de Medicina da Universidade de São Paulo (FMUSP), titulada pela Sociedade Brasileira de Geriatria e Gerontologia (SBGG)</p>
-                        <br>
-                        <p>Fellowship em Cardiogeriatria pelo Instituto do Coração - FMUSP</p>
-                        <br>
-                        <p>Aluna da pós-graduação em Cardiologia - Incor/FMUSP (2021-2025)</p>
-                        <br>
-                        <p>Especialista em Clínica Médica pela FMUSP</p>
-                        <br>
-                        <p>Médica pela Universidade Federal do Rio Grande do Norte (UFRN)</p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li>Especialista em Geriatria pela Faculdade de Medicina da Universidade de São Paulo (FMUSP), titulada pela Sociedade Brasileira de Geriatria e Gerontologia (SBGG)</li>
+                            <li>Fellowship em Cardiogeriatria pelo Instituto do Coração - FMUSP</li>
+                            <li>Aluna da pós-graduação em Cardiologia - Incor/FMUSP (2021-2025)</li>
+                            <li>Especialista em Clínica Médica pela FMUSP</li>
+                            <li>Médica pela Universidade Federal do Rio Grande do Norte (UFRN)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-5 mt-2 botao-olha-lattes-div">
+                        <a>
+                            <div class="d-flex flex-row align-items-center botao-olha-lattes">
+                                <i class="fa fa-file-alt curriculo-icone"></i>
+                                <p class="agendar-texto">Acessar Lattes</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sobre-o-geriatra">
+            <div class="container">
+                <div class="row">
+                    <div class="titulo-secao mt-5 mb-5 ml-3">
+                        <h1>GERIATRA: O MÉDICO QUE GERENCIA SUA SAÚDE</h1>
+                        <div class="linha-titulo-secao"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p>O geriatra é o profissional habilitado para entender particularidades sobre o envelhecimento, como:</p>
+                        <ul>
+                            <li>Alterações que são normais do envelhecer</li>
+                            <li>Alterações patológicas que ocorrem no envelhecimento</li>
+                            <li>Identificação de doenças com apresentações diferentes nos idosos, com capacidade de reconhecê-las e tratá-las de forma individualizada</li>
+                            <li>Promoção de envelhecimento saudável</li>
+                            <li>Prevenção e tratamento de doenças</li>
+                            <li>Prescrição de exames de rotina e realização de check-up periódico</li>
+                            <li>Alterações provocadas por medicamentos</li>
+                            <li>Avaliação do paciente de forma global</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 mb-5">
+                        <img src="assets/img/sobreGeriatra.png" alt="">
+                        <a>
+                            <div class="d-flex flex-row align-items-center botao-olha-lattes">
+                                <i class="fa fa-file-alt curriculo-icone"></i>
+                                <p class="agendar-texto">Acessar Lattes</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -96,8 +140,6 @@
 
 <!--Scripts JS-->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="{% static 'js/main.js' %}"></script>
-<script src="{% static 'js/text.js' %}"></script>
 <!--Scripts jQuery, Popper e Bootstrap-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
