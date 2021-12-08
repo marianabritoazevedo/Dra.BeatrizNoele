@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Adam-bold;
+    src: url("/assets/fonts/Adam-Bold.ttf");
+}
+
+@font-face {
+    font-family: Adam-medium;
+    src: url("/assets/fonts/Adam-Medium.ttf");
+}
+
+
+@font-face {
+    font-family: Saritha;
+    src: url("/assets/fonts/Saritha.ttf");
+}
+
+/* Menu */
+
+.bg-rosa-medio{
+    background-color: #c89496 !important;
+}
+
+.botao-agenda-consulta{
+    border: 2px solid #fae8ec;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    transform: 0s ;
+}
+
+.calendario-icone{
+    color: #fae8ec;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.agendar-texto{
+    margin-right: 10px;
+    color: #fae8ec;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.botao-agenda-consulta:hover,
+.calendario-icone:hover{
+    background-color: #fae8ec;
+    color: #c89496 !important;
+    transition: 1s;
+} /*Perguntar pra thais*/
+
+.item-menu{
+    font-size: 18px;
+}
+
+/* Seção 1 */
+.secao1{
+    background-image: url(../img/OndaRosaMedio.png);
+    height: 500px;
+}
+
+/*Sobre mim*/
+.sobre-mim img{
+    /*height: 500px;*/
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+.titulo-secao h1{
+    color: #c89496;
+}
+
+.linha-titulo-secao{
+    border: 2px solid #fae8ec;
+    width: 150px;
+}
+
+@media (max-width: 767px){
+    .texto-sobre-mim{
+        margin-top: 3rem;
+    }
+}
