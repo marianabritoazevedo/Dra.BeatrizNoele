@@ -264,3 +264,62 @@ body, html {
 .cardiogeriatria{
     background-color: #fcfcfc;
 }
+
+.cardiogeriatria img{
+    width: 100%;
+}
+
+.img-cardio{
+    margin-bottom: 20px;
+}
+
+/* Modalidades atendimento */
+
+.modalidades{
+    background-image: url(../img/bgModalidades.png);
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    background-color: #fae8ec;
+}
+
+.modalidades h1{
+    color: #c89496;
+    font-family: "Dancing script", sans-serif;
+    font-size: 50px;
+}
+
+.modalidades img{
+    width: 80%;
+}
+
+.modalidades h3{
+    font-family: 'Spartan', sans-serif;
+}
+
+.linha-modalidades{
+    background-color: #c89496;
+    border-radius: 3px;
+    height: 6px;
+    width: 90%;
+}
+
+/* Recomendações */
+.recomendacoes{
+    background-color: #fcfcfc;
+}
+
+.recomendacoes h4,
+.recomendacoes p{
+    font-family: 'Spartan', sans-serif;
+}
+
+.circle-dica{
+    background-color: #c89496;
+    width: 100px !important;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle-dica img{
+    width: 75px;
+}
