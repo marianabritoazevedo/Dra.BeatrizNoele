@@ -10,9 +10,58 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Spartan:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Spartan:wght@300;400;700&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <style>
+        .flip-card {
+            background-color: #fcfcfc;
+            width: 250px;
+            height: 350px;
+            perspective: 1000px;
+            border-radius: 10px;
+            
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 8px;
+            /*border: 2px solid #c89496;*/
+        }
+
+            .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+            }
+
+            .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            border: 2px solid #c89496;
+            }
+
+            .flip-card-front {
+            background-color: #fff;
+            color: black;
+            
+            }
+
+            .flip-card-back {
+            background-color: #c89496;
+            color: white;
+            transform: rotateY(180deg);
+            
+            }
+    </style>
 </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-rosa-medio">
@@ -108,7 +157,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-lg-7">
                         <p>O geriatra é o profissional habilitado para entender particularidades sobre o envelhecimento, como:</p>
                         <ul>
                             <li>Alterações que são normais do envelhecer</li>
@@ -121,9 +170,9 @@
                             <li>Avaliação do paciente de forma global</li>
                         </ul>
                     </div>
-                    <div class="col-md-5 mb-5">
+                    <div class="col-lg-5 mb-5 d-flex flex-column align-items-center justify-content-center">
                         <img src="assets/img/sobreGeriatra.png" alt="">
-                        <a>
+                        <a class="botao-agendar-sobre-geriatra">
                             <div class="d-flex flex-row align-items-center botao-olha-lattes">
                                 <i class="fa fa-file-alt curriculo-icone"></i>
                                 <p class="agendar-texto">Acessar Lattes</p>
@@ -133,7 +182,283 @@
                 </div>
             </div>
         </div>
-        
+        <div class="quando-procurar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-5 mb-4">
+                        <h1 class="text-center">A partir de qual idade eu devo procurar um geriatra?</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h4 class="text-center"><b>Quanto antes, melhor!</b></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-5">
+                        <p class="text-center">Isso irá garantir que você se familiarize mais cedo sobre estratégias para ter um envelhecimento mais saudável e bem sucedido (e, sem dúvidas, mais feliz). Além disso, também irá reduzir riscos de mortalidade e morbidade ao iniciar precocemente a prevenção e o tratamento de doenças que podem no futuro vir a comprometer sua funcionalidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards-comorbidades">
+            <div class="container">
+                <div class="row">
+                    <div class="titulo-secao mt-5 mb-5 ml-3">
+                        <h1>ÁREAS DE ATUAÇÃO E COMORBIDADES</h1>
+                        <div class="linha-titulo-secao"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center">
+                        <!--Card 1-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                        <div class="circle-card">
+                                            <img src="assets/img/card1.png" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                          <h4>Avaliação cognitiva</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="flip-card-back">
+                                <p class="text-center mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus. Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center">
+                        <!--Card 2-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                        <div class="circle-card">
+                                            <img src="assets/img/card2.png" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                          <h4>Avaliação de humor</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="flip-card-back">
+                                <p class="text-center mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus. Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center">
+                        <!--Card 3-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                        <div class="circle-card">
+                                            <img src="assets/img/card3.png" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                          <h4 class="mx-1">Promoção de saúde e rastreio de neoplasias</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="flip-card-back">
+                                <p class="text-center mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus. Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center">
+                        <!--Card 4-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                        <div class="circle-card">
+                                            <img src="assets/img/card4.png" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                          <h4>Prevenção de quedas</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="flip-card-back">
+                                <p class="text-center mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus. Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center">
+                        <!--Card 5-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                        <div class="circle-card">
+                                            <img src="assets/img/card5.png" alt="" style="margin-top: 20px;">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                          <h4 class="mx-1">Doenças cardiovasculares e metabólicas</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="flip-card-back">
+                                <p class="text-center mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus. Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center">
+                        <!--Card 6-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                        <div class="circle-card">
+                                            <img src="assets/img/card6.png" alt="" style="margin-top: 20px;">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                          <h4 class="mx-4">Doenças ósseas</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="flip-card-back">
+                                <p class="text-center mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus. Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center">
+                        <!--Card 7-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                        <div class="circle-card">
+                                            <img src="assets/img/card7.png" alt="" style="margin-top: 20px;">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                          <h4>Doença de Parkinson</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="flip-card-back">
+                                <p class="text-center mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus. Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center">
+                        <!--Card 8-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                        <div class="circle-card">
+                                            <img src="assets/img/card8.png" alt="" style="margin-top: 20px;">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                          <h4 class="mx-1">Problemas no sono</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="flip-card-back">
+                                <p class="text-center mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus. Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center">
+                        <!--Card 9-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <div class="row">
+                                    <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                        <div class="circle-card">
+                                            <img src="assets/img/card9.png" alt="" style="margin-top: 20px;">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                          <h4>Avaliação pré-operatória e polifarmácia</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="flip-card-back">
+                                <p class="text-center mt-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus. Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardiogeriatria">
+            <div class="container">
+                <div class="row">
+                    <div class="titulo-secao mt-5 mb-5 ml-3">
+                        <h1>CARDIOGERIATRIA</h1>
+                        <div class="linha-titulo-secao"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 d-flex flex-column">
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat libero, vel congue nisi suscipit in. Nullam elementum viverra orci a finibus.
+                             Fusce enim est, vestibulum ac dapibus in, ultrices ac augue. Sed semper lacus felis, ac egestas ligula euismod et. Nam dictum, leo vitae tempus tincidunt, 
+                             leo orci lobortis neque, quis finibus orci orci sed dui. Praesent ac quam blandit, ullamcorper dui eget, malesuada sem. Morbi luctus, ante vel cursus ultrices, 
+                             dui quam luctus diam, sit amet suscipit felis mi eu velit. Maecenas sagittis luctus sodales. Nulla quam est, placerat ut finibus ullamcorper, vehicula at nunc. 
+                             Phasellus pharetra iaculis tortor condimentum porta.
+                        </p>
+                        <!--<a class="botao-agendar-sobre-geriatra" style="width: 500px;">
+                            <div class="d-flex flex-row align-items-center botao-olha-lattes">
+                                <i class="fa fa-calendar curriculo-icone"></i>
+                                <p class="agendar-texto">Agendar consulta</p>
+                            </div>
+                        </a>-->
+                    </div>
+                    <div class="col-md-4">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 

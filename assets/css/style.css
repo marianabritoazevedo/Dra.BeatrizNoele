@@ -144,7 +144,7 @@ body, html {
 
 /* Pilares de formação */
 .pilares-formacao{
-    background-image: linear-gradient(to bottom, #c89496, #fff);
+    background-image: linear-gradient(to bottom, #c89496, #fcfcfc);
 }
 .pilares-formacao h1{
     color: #fae8ec;
@@ -193,9 +193,18 @@ body, html {
 }
 
 /* Sobre o geriatra */
+.sobre-o-geriatra{
+    background-color: #fcfcfc;
+}
+
 .sobre-o-geriatra h1{
     font-family: Adam-bold, sans-serif;
 }
+
+.sobre-o-geriatra li{
+    margin-bottom: 10px;
+}
+
 .sobre-o-geriatra li,
 .sobre-o-geriatra p{
     font-family: 'Spartan', sans-serif;
@@ -205,8 +214,53 @@ body, html {
     width: 100%;
     margin-top: -80px;
 }
-.sobre-o-geriatra a{
-    width: 200px;
+
+.botao-agendar-sobre-geriatra div{
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Quando procurar um geriatra */
+.quando-procurar{
+    background-color: #fae8ec;
+}
 
+.quando-procurar h1{
+    color: #c89496;
+    font-family: "Dancing script", sans-serif;
+    font-size: 50px;
+}
+.quando-procurar p,
+.quando-procurar h4{
+    font-family: 'Spartan', sans-serif;
+}
+
+/* Cards comorbidades */
+.cards-comorbidades{
+    background-color: #fcfcfc;
+}
+.cards-comorbidades h1{
+    font-family: Adam-bold, sans-serif;
+}
+.circle-card{
+    background-color: #c89496;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.circle-card img{
+    width: 90px;
+    margin-top: 13px;
+}
+.flip-card-front h4{
+    color: #c89496;
+    font-family: 'Spartan', sans-serif;
+}
+
+/* Cardiogeriatria */
+
+.cardiogeriatria{
+    background-color: #fcfcfc;
+}
