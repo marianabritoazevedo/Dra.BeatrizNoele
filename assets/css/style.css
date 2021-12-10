@@ -290,7 +290,7 @@ body, html {
 }
 
 .modalidades img{
-    width: 80%;
+    width: 70%;
 }
 
 .modalidades h3{
@@ -316,10 +316,45 @@ body, html {
 
 .circle-dica{
     background-color: #c89496;
-    width: 100px !important;
-    height: 100px;
+    padding: 2%;
     border-radius: 50%;
 }
 .circle-dica img{
     width: 75px;
+}
+
+/* Depoimentos */
+.depoimentos{
+    background-image: url(../img/bgDepoimentos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /*height: 90%;*/
+    background-size: cover;
+    /*padding-top: 150px;*/
+}
+.depoimentos h1{
+    color: #c89496;
+    font-family: "Dancing script", sans-serif;
+    font-size: 50px;
+}
+.div-depoimento{
+    height: 150px;
+    width: 70%;
+}
+
+.div-depoimento h3{
+    font-family: 'Spartan', sans-serif;
+}
+
+.carousel li{
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+}
+
+.carousel-indicators .active{
+    background-color: #c89496;
+}
+.carousel-indicators li{
+    background-color: #fff;
 }
