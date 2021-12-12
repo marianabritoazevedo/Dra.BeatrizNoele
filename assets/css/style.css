@@ -14,7 +14,7 @@
     src: url("../fonts/Saritha.ttf");
 }
 
-/* Menu */
+/* Geral*/
 
 * {
     padding: 0;
@@ -26,6 +26,21 @@ body, html {
     height: 100%;
     scroll-behavior: smooth;
 }
+
+/*Scrollbar*/
+
+body::-webkit-scrollbar {
+    width: 10px
+} 
+  
+body::-webkit-scrollbar-thumb {   
+    background-color: #af495e;
+    border-radius: 5px;   
+}
+
+
+
+/* Navbar */
 
 .bg-rosa-medio{
     background-color: #c89496 !important;
@@ -78,6 +93,21 @@ body, html {
     font-size: 18px;
 }
 
+.tag-a-agendar a{
+    margin-right: 4px;
+}
+
+.navbar img{
+    width: 25px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+.insta-e-wpp-menu{
+    display: flex;
+    flex-direction: row;
+}
+
 /* Seção 1 */
 .secao1{
     background-image: url(../img/OndaRosaMedio.png);
@@ -100,7 +130,7 @@ body, html {
 }
 
 .sobre-mim h1{
-    font-family: Adam-bold, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .sobre-mim p{
@@ -190,6 +220,9 @@ body, html {
     .botao-olha-lattes-div{
         margin-left: 15px;
     }
+    ul{
+        margin: 0px 8px 0px 8px;
+    }
 }
 
 /* Sobre o geriatra */
@@ -198,7 +231,7 @@ body, html {
 }
 
 .sobre-o-geriatra h1{
-    font-family: Adam-bold, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .sobre-o-geriatra li{
@@ -216,7 +249,7 @@ body, html {
 }
 
 .botao-agendar-sobre-geriatra div{
-    width: 170px;
+    width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,9 +265,22 @@ body, html {
     font-family: "Dancing script", sans-serif;
     font-size: 50px;
 }
-.quando-procurar p,
-.quando-procurar h4{
+.quando-procurar p{
     font-family: 'Spartan', sans-serif;
+}
+
+.quando-procurar h4{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.botao-agendar-sobre-geriatra p{
+    font-family: Adam-Bold, sans-serif;
+}
+
+@media (max-width: 575px){
+    .sobre-o-geriatra img{
+        margin-top: -40px;
+    }
 }
 
 /* Cards comorbidades */
@@ -242,7 +288,7 @@ body, html {
     background-color: #fcfcfc;
 }
 .cards-comorbidades h1{
-    font-family: Adam-bold, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
 }
 .circle-card{
     background-color: #c89496;
@@ -250,6 +296,11 @@ body, html {
     width: 120px;
     border-radius: 50%;
 }
+
+.cards-comorbidades p{
+    font-family: 'Spartan', sans-serif;
+}
+
 .circle-card img{
     width: 90px;
     margin-top: 13px;
@@ -260,6 +311,14 @@ body, html {
 }
 
 /* Cardiogeriatria */
+
+.cardiogeriatria h1{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.cardiogeriatria p{
+    font-family: 'Spartan', sans-serif;
+}
 
 .cardiogeriatria{
     background-color: #fcfcfc;
@@ -304,9 +363,20 @@ body, html {
     width: 90%;
 }
 
+@media (max-width: 575px){
+    .modalidades img{
+        width: 50%;
+    }
+    
+}
+
 /* Recomendações */
 .recomendacoes{
     background-color: #fcfcfc;
+}
+
+.recomendacoes h1{
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .recomendacoes h4,
@@ -316,11 +386,17 @@ body, html {
 
 .circle-dica{
     background-color: #c89496;
-    padding: 2%;
+    padding: 3%;
     border-radius: 50%;
 }
 .circle-dica img{
     width: 75px;
+}
+
+@media (max-width: 575px){
+    .circle-dica{
+        padding: 4%;
+    }
 }
 
 /* Depoimentos */
@@ -357,4 +433,233 @@ body, html {
 }
 .carousel-indicators li{
     background-color: #fff;
+}
+
+.botao-cadastra-depoimento {
+    color: #c89496;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: Adam-Bold, sans-serif;
+    border: 2px solid #c89496;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px !important;
+}
+
+.cadastro-icone{
+    color: #c89496;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.botao-cadastra-depoimento:hover {
+    background-color: #fae8ec;
+    color: #c89496 !important;
+}
+
+.botao-cadastra-depoimento:hover .cadastro-icone{
+    background-color: #fae8ec;
+    color: #c89496;
+    transition: .5s;
+}
+
+.cadastro-depoimento-texto{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+/*Redes sociais*/
+.feed-insta h1{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* Localização e contato */
+.local-contato {
+    background-color: #c89496;
+}
+
+.local-contato h1{
+    color: #fae8ec;
+    font-family: "Dancing script", sans-serif;
+    font-size: 50px;
+}
+
+.localizacao iframe{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.local-contato img{
+    /*width: 25px;*/
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.local-contato h5{
+    font-family: 'Spartan', sans-serif;
+}
+
+.botao-envia-mensagem {
+    color: #fae8ec;
+    font-family: Adam-Bold, sans-serif;
+    padding: 3% 0;
+    border: 2px solid #fae8ec;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+}
+
+.mensagem-icone{
+    color: #fae8ec;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.botao-envia-mensagem:hover {
+    background-color: #fae8ec;
+    color: #c89496 !important;
+}
+
+.botao-envia-mensagem:hover .mensagem-icone{
+    background-color: #fae8ec;
+    color: #c89496;
+    transition: .5s;
+}
+
+.enviar-mensagem-texto{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+@media (max-width: 575px){
+    .rodape{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Rodapé */
+.rodape{
+    background-color: #fae8ec;
+}
+
+.rodape img{
+    height: 80px;
+}
+
+.imagens-redes img{
+    width: 30px;
+    height: 30px;
+}
+
+.rodape p{
+    font-family: 'Spartan', sans-serif;
+}
+
+
+/*Perguntar pra thais*/
+@media (max-width: 575px){
+    .local-contato h5{
+        font-size: 16px;
+    }
+}
+
+/* Modal enviar mensagem */
+.modal h5{
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 5px;
+}
+
+.modal h4{
+    font-family: 'Spartan', sans-serif;
+}
+
+textarea{
+    resize: none;
+}
+
+input,
+textarea{
+    font-family: 'Spartan', sans-serif;
+}
+
+.form-control:focus {
+    border-color: #c89496;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(200, 148, 150, 0.6);
+}
+
+/*.botao-modal-enviar button{
+    background-color: #fae8ec;
+    border: none;
+    transition: 0.5s;
+}
+
+.botao-modal-enviar button:hover{
+    background-color: #c89496;
+    transition: 0.5s;
+}*/
+
+.botao-modal-enviar button{
+    color: #c89496;
+    font-family: Adam-Bold, sans-serif;
+    padding: 3% 0;
+    border: 2px solid #c89496;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+}
+
+.enviar-icone{
+    color: #c89496;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.botao-modal-enviar button:hover {
+    background-color: #c89496;
+    color: #fae8ec !important;
+}
+
+.botao-modal-enviar button:hover .enviar-icone{
+    background-color: #c89496;
+    color: #fae8ec;
+    transition: .5s;
+}
+
+/*Geral*/
+@media (max-width: 575px){
+    .sobre-mim h1, 
+    .sobre-o-geriatra h1,
+    .cards-comorbidades h1,
+    .recomendacoes h1,
+    .feed-insta h1{
+        font-size: 30px;
+    }
+    .cardiogeriatria h1{
+        font-size: 30px;
+    }
 }
