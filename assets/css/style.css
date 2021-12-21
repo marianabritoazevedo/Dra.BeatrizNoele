@@ -27,6 +27,27 @@ body, html {
     scroll-behavior: smooth;
 }
 
+body {
+    position: relative;
+}
+
+.icone-verde-whatsapp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+}
+
+.icone-verde-whatsapp img{
+    width: 90px;
+}
+
+@media (max-width: 767px){
+    .icone-verde-whatsapp img{
+        width: 70px;
+    }
+}
+
 /*Scrollbar*/
 
 body::-webkit-scrollbar {
@@ -37,8 +58,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #af495e;
     border-radius: 5px;   
 }
-
-
 
 /* Navbar */
 
