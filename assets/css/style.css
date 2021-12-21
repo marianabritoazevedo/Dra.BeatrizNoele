@@ -39,12 +39,12 @@ body {
 }
 
 .icone-verde-whatsapp img{
-    width: 90px;
+    width: 70px;
 }
 
 @media (max-width: 767px){
     .icone-verde-whatsapp img{
-        width: 70px;
+        width: 50px;
     }
 }
 
