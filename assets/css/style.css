@@ -244,8 +244,10 @@ body::-webkit-scrollbar-thumb {
     text-align: justify;
 }
 .sobre-o-geriatra img{
-    width: 100%;
-    margin-top: -80px;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.25);
 }
 
 .botao-agendar-sobre-geriatra div{
@@ -279,7 +281,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 575px){
     .sobre-o-geriatra img{
-        margin-top: -40px;
+        margin-top: 10px;
     }
 }
 
@@ -326,10 +328,53 @@ body::-webkit-scrollbar-thumb {
 
 .cardiogeriatria img{
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.25);
 }
 
 .img-cardio{
     margin-bottom: 20px;
+}
+
+.botao-agenda-cardiogeriatria {
+    color: #c89496;
+    font-family: Adam-Bold, sans-serif;
+    border: 2px solid #c89496;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px !important;
+}
+
+.agenda-cardio-icone{
+    color: #c89496;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.botao-agenda-cardiogeriatria:hover {
+    background-color: #c89496;
+    color: #fae8ec !important;
+}
+
+.botao-agenda-cardiogeriatria:hover .agenda-cardio-icone{
+    background-color: #c89496;
+    color: #fae8ec;
+    transition: .5s;
+}
+
+.agenda-cardio-texto{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 2px;
 }
 
 /* Modalidades atendimento */
@@ -349,7 +394,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .modalidades img{
-    width: 70%;
+    width: 60%;
 }
 
 .modalidades h3{
@@ -477,9 +522,39 @@ body::-webkit-scrollbar-thumb {
     margin-top: 2px;
 }
 
+@media (max-width: 530px){
+    .carousel-inner{
+        margin-bottom: 80px;
+    }
+}
+
 /*Redes sociais*/
 .feed-insta h1{
     font-family: 'Julius Sans One', sans-serif;
+}
+
+.feed-insta h4{
+    font-family: "Dancing script", sans-serif;
+    margin-top: 15px;
+}
+
+.titulo-secao-insta-mobile{
+    display: none;
+}
+
+.feed-insta img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 767px){
+    .titulo-secao-insta-mobile{
+        display: block !important;
+    }
+    .titulo-secao-insta{
+        display: none !important;
+    }
 }
 
 /* Localização e contato */
@@ -549,16 +624,23 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 0;
 }
 
-@media (max-width: 575px){
+@media (max-width: 767px){
     .rodape{
-        flex-direction: column;
-        justify-content: center;
+        display: none;
+    }
+    .rodape-mobile{
+        display: block !important;
     }
 }
 
 /* Rodapé */
 .rodape{
     background-color: #fae8ec;
+}
+
+.rodape-mobile{
+    display: none;
+    background-color: #fae8ec
 }
 
 .rodape img{
@@ -568,10 +650,21 @@ body::-webkit-scrollbar-thumb {
 .imagens-redes img{
     width: 30px;
     height: 30px;
+    margin: 5px;
 }
 
 .rodape p{
     font-family: 'Spartan', sans-serif;
+}
+
+.img-logo-rodape-mobile img{
+    width: 100%;
+    margin-top: -50px;
+}
+
+.imagens-redes-rodape-mobile img{
+    margin: 10px 5px 10px 5px;
+    width: 35px;
 }
 
 
